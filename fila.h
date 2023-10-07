@@ -1,6 +1,8 @@
 #ifndef FILA_H
 #define FILA_H
 
+
+// define o tamanho, o índice da frente da fila, o índice do final da fila (tras) e a quantidade de elementos na fila.
 typedef struct {
     double *itens;
     int tamanho;
@@ -9,6 +11,8 @@ typedef struct {
     int quantidade;
 } Fila;
 
+
+// Declara funções relacionadas à fila, incluindo a criação da fila, enfileirar, desenfileirar, verificar o tamanho, verificar se está vazia e destruir a fila.
 Fila *criarFila(int tamanho);
 void enfileirar(Fila *fila, double valor);
 double desenfileirar(Fila *fila);
