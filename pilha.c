@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include "pilha.h"
 
+
+
 Pilha *criarPilha(int tamanho) {
     Pilha *pilha = (Pilha *)malloc(sizeof(Pilha));
     pilha->itens = (double *)malloc(sizeof(double) * tamanho);
@@ -9,6 +11,8 @@ Pilha *criarPilha(int tamanho) {
     pilha->topo = -1;
     return pilha;
 }
+
+// implementa as funções da pilha "h".
 
 void empilhar(Pilha *pilha, double valor) {
     if (pilha->topo < pilha->tamanho - 1) {
