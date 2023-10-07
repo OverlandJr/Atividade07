@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include "fila.h"
 
+
+//Implementa as funções declaradas em fila.h para operações em filas, como criar uma fila, enfileirar valores, desenfileirar valores, verificar o tamanho, verificar se está vazia e destruir a fila.
 Fila *criarFila(int tamanho) {
     Fila *fila = (Fila *)malloc(sizeof(Fila));
     fila->itens = (double *)malloc(sizeof(double) * tamanho);
